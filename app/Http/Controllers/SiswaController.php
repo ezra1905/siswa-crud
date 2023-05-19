@@ -50,4 +50,8 @@ class SiswaController extends Controller
         $siswa->update();
         return redirect()->route('tampil.siswa');
     }
+    public function delete($id){
+        \App\Models\SiswaModel::where('id',$id)->delete();
+        return redirect()->route('tampil.siswa');
+    }
 }

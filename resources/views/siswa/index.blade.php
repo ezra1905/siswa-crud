@@ -32,7 +32,7 @@
                     <td>{{ $item->asal_sekolah }}</td>
                     <td>
                         {{-- http://127.0.0.1:8000/siswa/edit/parameter id --}}
-                        <a href="{{ route('siswa.edit',$item->id) }}">Edit</a> | <a href="">Hapus</a>
+                        <a href="{{ route('siswa.edit',$item->id) }}">Edit</a> | <a href="{{ route('siswa.hapus',$item->id) }}">Hapus</a>
                     </td>
                 </tr>
             @endforeach
